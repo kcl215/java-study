@@ -5,13 +5,13 @@
 class Sample1_04_1 {
 	public static void main (String[] args) {
 		
-		int    teika   = 1000 ;             //定価の金額
+		int listPrice   = 1000 ;             //定価の金額
 		
-		double zeiritu = 1.08 ;             //消費税
+		final double TAX = 1.1 ;             //消費税
 		
-		double siharai = teika * zeiritu ;  //支払い額を計算
+		double payment = listPrice * TAX ;  //支払い額を計算
 		
-		System.out.println(siharai) ;       //支払い額を画面に表示
+		System.out.println(payment) ;       //支払い額を画面に表示
 		
 	}
 }
